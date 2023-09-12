@@ -1,0 +1,130 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./Public/Gilroy-SemiBold.ttf') format('truetype');
+}
+
+/* header  */
+.top-header {
+  width: 100vw;
+  height: 100px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  z-index: 10;
+  
+}
+
+/* site name and logo  */
+.header-logo-name {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.logo {
+  width: 36px;
+  height: 36px;
+}
+
+.logo-name {
+  width: 140px;
+  height: 22.395px;
+  margin-left: 4px;
+}
+
+/* search box  */
+
+.header-search-box {
+  position: relative;
+}
+
+.input-box {
+  width: 800px;
+  height: 50px;
+  outline: none;
+  border-radius: 25px;
+  border: 1px solid #d3d3d3;
+  background: #fff;
+  padding-left: 33px;
+}
+
+.input-box::placeholder {
+  font-family: 'Gilroy', sans-serif;
+  color: #8a8a8a;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header-search-box::before {
+  content: '';
+  position: absolute;
+  top: 35%;
+  right: 20px;
+  width: 15px;
+  height: 15px;
+  background: url('../Public/searchbox-icon.svg') no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+/* search work button  */
+.header-search-work-btn {
+  width: 180px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #01afba 0%, #01a6b0 46.94%, #038d96 100%);
+  color: #fff;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* header login and cart  */
+.header-login-cart {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-login {
+  color: #393939;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  padding: 10px;
+  cursor: pointer;
+}
+.header-cart {
+  color: #393939;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.header-cart::before{
+    content: '';
+    position: absolute;
+    left: 60px;
+    width: 22px;
+    height:21px;
+    background: url('../Public/cart-logo.svg') no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
