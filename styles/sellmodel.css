@@ -5,7 +5,7 @@
 
 .sell-model-box {
   width: 100vw;
-  height: 800px;
+  min-height: 800px;
   background: #fff;
   display: flex;
   flex-direction: row;
@@ -36,9 +36,9 @@
 }
 
 .sell-model-links {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
-    grid-gap: 50px; /* Adjust the gap as needed */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
 }
 
 .sell-model-links-box {
@@ -70,5 +70,51 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .sell-model-box {
+    flex-direction: column;
+    padding: 40px 10px;
+  }
 
+  .sell-model-image-box {
+    width: 406px;
+    height: 260px;
+    background: url('../Public/aircraft-responsive.svg'), no-repeat center/cover;
+    margin-top: 50px;
+  }
+  .sell-model-links-box {
+    order: -1;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .sell-model-heading {
+    width: 90vw;
+    font-size: 25px;
+    line-height: 29px
+  }
+
+
+  .sell-model-box{
+    align-items: start;
+  }
+
+  .sell-model-links {
+    grid-gap: 30px;
+  }
+
+  .sell-model-link-heading{
+    font-size: 14px;
+    line-height: 25px;
+    width: 40vw;
+  }
+  .sell-model-link{
+    font-size: 14px;
+  }
+
+  .sell-model-image-box {
+    background-size: 300px 200px;
+    background-repeat: no-repeat;
+
+  }
 }
