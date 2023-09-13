@@ -41,6 +41,14 @@
   font-weight: 400;
   line-height: 24px; /* 144.444% */
 }
+
+.market-place-image-description-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 70px;
+}
 .market-place-3d-model-detail-list {
   display: flex;
   flex-direction: column;
@@ -68,7 +76,46 @@
   font-style: normal;
   font-weight: bold;
   line-height: normal;
-  border-bottom: 2px solid #0081A8;
+  border-bottom: 2px solid #0081a8;
+}
+
+.market-place-bunny-image {
+  width: 600px;
+  height: 550px;
+  background: 
+    url('../Public/bunny-image.svg'),no-repeat center/cover;
+}
+
+.maret-place-descritpion-button-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.market-place-bottom-box-description {
+  width: 300px;
+  height: 112px;
+  color: #393939;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 20px 0;
+}
+
+.market-place-bottom-box-button {
+  width: 180px;
+  height: 50px;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #01afba 0%, #01a6b0 46.94%, #038d96 100%);
+  color: #fff;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: normal;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .market-place-bottom-image {
@@ -76,6 +123,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
+  left: 0;
   bottom: 0;
   width: 100vw;
   height: 150px;
