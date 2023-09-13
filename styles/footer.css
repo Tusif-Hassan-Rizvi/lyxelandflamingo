@@ -5,7 +5,7 @@
 
 footer {
   width: 100vw;
-  height: 750px;
+  min-height: 750px;
   background: #393939;
   display: flex;
   flex-direction: column;
@@ -147,8 +147,8 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
- position: absolute;
- bottom: 60px;
+  position: absolute;
+  bottom: 60px;
 }
 
 .footer-logo-name {
@@ -187,4 +187,79 @@ footer {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  footer {
+    padding: 50px 20px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+  }
+
+  .stay-uptodate-heading {
+    padding-bottom: 15px;
+  }
+
+  .stay-uptodate-info {
+    padding-bottom: 30px;
+  }
+
+  .stya-uptodate-input-box {
+    width: 100vw;
+  }
+
+  .uptodate-input {
+    width: 75vw;
+  }
+
+.footer-logo-name
+{
+  margin-bottom: 4px;
+}
+
+  .footer-bg {
+    background-size: 170px 170px;
+    background-repeat: no-repeat;
+    width: 170px;
+    height: 170px;
+  }
+
+  .logo-and-copy-right {
+    flex-direction: column;
+    bottom: 10px;
+    align-items: start;
+  }
+
+ 
+
+  .copy-right-text {
+    margin: 4px 0;
+  }
+
+  .term-condition-text,
+  .privacy-policy-text {
+    display: none;
+  }
+
+  .footer-social-icon-box{
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .footer-company, .footer-modelry, .footer-sell3d-models, .footer-getintouch{
+    margin: 20px 0;
+  }
+
+  .logo {
+    width: 25px;
+    height: 25px;
+  }
+
+  .logo-name {
+    width: 110px;
+    height: 17.596px;
+    margin-left: 0px;
+  }
 }

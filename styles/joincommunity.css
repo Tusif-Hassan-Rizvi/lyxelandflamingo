@@ -6,7 +6,7 @@
 .join-community-box {
   position: relative;
   width: 100vw;
-  height: 800px;
+  min-height: 800px;
   background: url('../Public/join-community-bg.png') no-repeat center/cover;
   display: flex;
   flex-direction: row;
@@ -107,4 +107,55 @@
   height: 550px;
   background: url('../Public/join-community-section-bg.svg') no-repeat
     center/contain;
+}
+
+@media screen and (max-width: 1200px) {
+  .join-community-box {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  .join-community-heading {
+    width: 90vw;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .join-community-info-heading {
+    margin-bottom: 10px;
+  }
+
+  .join-community-info-description {
+    width: 80vw;
+  }
+
+  .join-community-image {
+    background: url('../Public/join-community-small.svg') no-repeat
+      center/contain;
+  }
+  .join-community-info-box {
+    flex-direction: column;
+  }
+
+  .join-community-info{
+    margin: 10px 0;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .join-community-image {
+    background-size: 400px 310px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .join-community-image {
+    background-size: 350px 300px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .join-community-image {
+    background-size: 280px 250px;
+  }
 }
