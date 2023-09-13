@@ -68,3 +68,7 @@
   text-transform: capitalize;
   cursor: pointer;
 }
+
+@media screen and (max-width: 1200px) {
+
+}
