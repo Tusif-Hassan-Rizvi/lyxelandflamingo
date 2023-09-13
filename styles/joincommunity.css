@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./Public/Gilroy-SemiBold.ttf') format('truetype');
+}
+
+.join-community-box {
+  position: relative;
+  width: 100vw;
+  height: 800px;
+  background: url('../Public/join-community-bg.png') no-repeat center/cover;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+.join-community-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    54.89% 54.39% at 51.3% 45.63%,
+    #02adb8 0%,
+    #03939c 100%
+  );
+  z-index: -1;
+}
+
+.join-community-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.join-community-heading,
+.join-community-info-box,
+.join-community-button {
+  margin-bottom: 55px;
+}
+
+.join-community-heading {
+  width: 360px;
+  /* height: 92px; */
+  color: #fff;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 45px; /* 119.048% */
+}
+
+.join-community-info-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.join-community-info {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+
+.join-community-info-heading {
+  color: #fff;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  margin-bottom: 18px;
+}
+
+.join-community-info-description {
+  color: #fff;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 23px; /* 127.778% */
+  width: 200px;
+  height: 82px;
+}
+
+.join-community-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 249px;
+  height: 50px;
+  border-radius: 25px;
+  background: #fff;
+  font-family: 'Gilroy', sans-serif;
+  color: #0081a8;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.join-community-image {
+  width: 550px;
+  height: 550px;
+  background: url('../Public/join-community-section-bg.svg') no-repeat
+    center/contain;
+}

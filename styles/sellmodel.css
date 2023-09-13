@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./Public/Gilroy-SemiBold.ttf') format('truetype');
+}
+
+.sell-model-box {
+  width: 100vw;
+  height: 800px;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+}
+
+.sell-model-image-box {
+  width: 763px;
+  height: 488px;
+  background: url('../Public/sell-model-aircraft.svg'), no-repeat center/cover;
+}
+
+.sell-model-links-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.sell-model-heading {
+  width: 389px;
+  color: #393939;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 40px;
+  margin-bottom: 50px;
+}
+
+.sell-model-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
+    grid-gap: 50px; /* Adjust the gap as needed */
+}
+
+.sell-model-links-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.sell-model-link-heading {
+  width: 220px;
+  color: #393939;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px; /* 122.727% */
+  margin: 15px 0;
+  flex-wrap: wrap;
+}
+
+.sell-model-link {
+  color: #02aeb9;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-transform: capitalize;
+  cursor: pointer;
+}

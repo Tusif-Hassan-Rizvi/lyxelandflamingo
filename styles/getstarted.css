@@ -19,8 +19,6 @@
   flex-direction: column;
 }
 
-
-
 .info-heading {
   width: 300px;
   color: #393939;
@@ -47,6 +45,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 35px;
+  cursor: pointer;
 }
 
 .picture-3d {
